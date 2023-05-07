@@ -2,7 +2,6 @@ import express from 'express'
 import * as dotenv from 'dotenv'
 import cors from 'cors'
 import { Configuration, OpenAIApi } from 'openai'
-require('dotenv').config();
 
 dotenv.config()
 
@@ -46,4 +45,4 @@ app.post('/', async (req, res) => {
   }
 })
 
-app.listen(3000, () => console.log('AI server started on http://localhost:3000'))
+app.listen(5000, () => console.log('AI server started on http://localhost:5000'))
